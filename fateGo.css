@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    margin:0px;
+    height: 100%;
+    flex-direction: column;
+    background-color: #22262c;
+}
+header{
+    display: flex;
+    background-color: black;
+    color:white;
+    flex-direction: row;
+    padding:5px 40px;
+    justify-content: flex-end;
+    align-content: center;
+    font-size:large;
+    font-weight: bold;
+}
+#busqueda{
+    border-radius:15px;
+    border:2px solid black;
+    box-shadow:0px 2px 0px azure,0px -2px 0px azure,2px 0px 0px azure,-2px 0px 0px azure;
+    padding: 2px;
+    font-family: 'JetBrains Mono', monospace;
+    align-self: center;
+    margin-left:40px;
+}
+#busqueda:focus{
+    box-shadow:0px 2px 0px azure,0px -2px 0px azure,2px 0px 0px azure,-2px 0px 0px azure,0px 0px 20px azure;
+    outline-width: 0;
+}
+#padre{
+    width: 100%;
+    height: fit-content;
+    background-color: #22262c;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Jura', sans-serif;
+
+}
+header h1{
+    margin-right: auto;
+    margin-left:40px ;
+}
+header img{
+    align-self: center;
+}
+#lupa{
+    margin-left:15px ;
+    border-radius: 30px;
+    border: solid 3px azure;
+    padding:2px;
+}
+#lupa:hover{
+    box-shadow:0px 0px 20px azure;
+
+}
+#padre div{
+    min-width: 280px;
+    align-self: center;
+}
+#padre table, #padre td{
+    background-color: azure;
+    border:solid 5px black;
+    border-collapse: collapse;
+
+}
+#datos{
+    height: fit-content;
+    position: sticky;
+    bottom:7%;
+    margin:auto;
+    padding:20px;
+    font-family: 'Jura', sans-serif;
+
+
+}
+#datos:focus{
+    
+    outline: 0;
+    box-shadow:0px 0px 20px azure;
+}
+#datos header{
+    background-color:#FFFFD0;
+    color:black;
+    border-bottom:solid 1px black;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+#datos footer{
+    text-align: center;
+    border-top:solid 1px black;
+    padding-top: 10px;
+}
+#datos p{
+    text-align: center;
+}
+
+#radios{
+    height:fit-content;
+    align-self: center;
+    margin-right:20px;
+    border-radius: 20px;
+    display: flex;
+}
+#radios input{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:8px;
+}
+#radios label{
+    border-radius: 10px;
+    padding:2px;
+}
+#radios label:hover{
+    box-shadow:0px 0px 10px azure, inset 0px 0px 10px azure;
+}
+@media screen and (max-width:1160px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    header h1{
+        margin:auto;
+        margin-bottom:25px;
+    }
+    #busqueda{
+        margin:0px;
+        margin-bottom:25px;
+        width:50%;
+    }
+    #lupa{
+        margin:0px;
+        float:left;
+    }
+    #radios{
+        margin-bottom: 25px;
+    }
+
+}
